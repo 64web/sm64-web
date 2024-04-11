@@ -1,0 +1,90 @@
+@font-face {
+  font-family: SGp;
+  src: url(ShinGoBold.otf);
+  font-weight: bold;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #3d3e47;
+  font-family: SGp, sans-serif;
+  color: white;
+  image-rendering: pixelated;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh; /* emscripten canvas */
+}
+
+#controls {
+  margin-left: 1em;
+  display: flex;
+  align-items: center;
+}
+
+#features {
+  padding-left: 4em;
+}
+
+button {
+  background-color: white;
+  color: #396fdb;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 16px;
+  transition-duration: 500ms;
+  font-family: SGp, sans-serif;
+  border: 2px solid #396fdb;
+}
+
+button:hover {
+  background-color: #396fdb;
+  color: white;
+  border: 2px solid white;
+}
+
+h2>em {
+  color: #7696d5;
+}
+
+a {
+  color: #7696d5;
+  text-decoration: none;
+  font-size: 1em;
+  transition-duration: 525ms;
+}
+
+a:hover {
+  color: #396fdb;
+  font-size: 1.2em;
+}
+
+.moi {
+  color: white;
+  font-size: 1em;
+}
+
+.moi:hover {
+  color: black;
+  font-size: 1em;
+}
