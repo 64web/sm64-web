@@ -10,8 +10,9 @@ html {
   padding: 0;
   width: 100vw;
   min-height: 100vh;
-  background-color: #3d3e47;
   font-family: SGp, sans-serif;
+  background: rgb(13,27,42);
+  background: linear-gradient(28deg, rgba(13,27,42,1) 0%, rgba(35,52,84,1) 35%, rgba(42,54,70,1) 100%); 
   color: white;
   image-rendering: pixelated;
   scrollbar-width: none;
@@ -19,19 +20,6 @@ html {
 
 ::-webkit-scrollbar {
   display: none;
-}
-
-#container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-canvas {
-  width: 100vw;
-  height: 100vh; /* emscripten canvas */
 }
 
 #controls {
@@ -87,4 +75,9 @@ a:hover {
 .moi:hover {
   color: black;
   font-size: 1em;
+}
+
+.render {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
